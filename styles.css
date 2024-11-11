@@ -1,17 +1,27 @@
 #character {
     position: relative;
-    width: 200px;
-    height: 400px;
-    background: url('character.png') no-repeat center center;
-    background-size: contain;
+    width: 200px; /* Adjust based on your image size */
+    height: 400px; /* Adjust based on your image size */
 }
 
-#mouth {
+#upper-head {
     position: absolute;
-    bottom: 50px;
+    top: 0;
     left: 50%;
-    width: 50px;
-    height: 20px;
-    background: red;
+    width: 200px; /* Adjust based on your image size */
+    height: 200px; /* Adjust based on your image size */
+    background: url('upper-head.png') no-repeat center center;
+    background-size: contain;
+    transform: translateX(-50%);
+}
+
+#lower-jaw {
+    position: absolute;
+    top: 200px; /* Adjust based on your image size */
+    left: 50%;
+    width: 200px; /* Adjust based on your image size */
+    height: 200px; /* Adjust based on your image size */
+    background: url('lower-jaw.png') no-repeat center center;
+    background-size: contain;
     transform: translateX(-50%);
 }
