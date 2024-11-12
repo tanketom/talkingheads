@@ -31,7 +31,7 @@ body {
 
 #mouth-container {
     position: absolute;
-    top: 200px;
+    top: 130px; /* 200px (initial position) - 70px */
     left: 50%;
     width: 105px;
     height: 70px; /* Initial height */
@@ -50,11 +50,11 @@ body {
 
 #lower-jaw {
     position: absolute;
-    top: 70px; /* Adjusted to be 70 pixels higher */
+    top: 70px; /* Attach to the bottom of the red box */
     left: 50%;
     width: 200px;
     height: 200px;
     background: url('head-sprite.png') no-repeat center bottom;
     background-size: 200px 400px;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, 0);
 }
