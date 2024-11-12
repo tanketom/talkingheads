@@ -16,7 +16,7 @@ navigator.mediaDevices.getUserMedia({ audio: true })
             analyser.getByteFrequencyData(array);
             const average = array.reduce((a, b) => a + b) / array.length;
             const mouthContainer = document.getElementById('mouth-container');
-            mouthContainer.style.height = `${average}px`;
+            mouthContainer.style.height = `${70 + average}px`; // Adjust the initial height based on your image size
         };
     })
     .catch(err => console.error('Error accessing microphone:', err));
