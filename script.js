@@ -15,8 +15,8 @@ navigator.mediaDevices.getUserMedia({ audio: true })
             const array = new Uint8Array(analyser.frequencyBinCount);
             analyser.getByteFrequencyData(array);
             const average = array.reduce((a, b) => a + b) / array.length;
-            const lowerJaw = document.getElementById('lower-jaw');
-            lowerJaw.style.top = `${200 + average}px`; // Adjust the initial top value based on your image size
+            const mouthContainer = document.getElementById('mouth-container');
+            mouthContainer.style.height = `${average}px`;
         };
     })
     .catch(err => console.error('Error accessing microphone:', err));
